@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.weather-card {
+  width: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.weather-header {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.location {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.feels-like {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.weather-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.condition {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.condition-details {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #777;
+}
+
+.humidity,
+.wind,
+.sunrise,
+.sunset {
+  margin: 5px 0;
+}
+
+.weather-footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.sunrise, .sunset {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+@media (max-width: 400px) {
+  .weather-card {
+    width: 90%;
+  }
+}
